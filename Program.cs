@@ -47,7 +47,7 @@
                         MessageCacheSize = 200,
                     };
 
-                    config.Token = context.Configuration["token"];
+                    config.Token = context.Configuration[secrets.TOKEN];
                 })
                 .UseCommandService((context, config) =>
                 {
