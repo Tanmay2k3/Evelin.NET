@@ -1,0 +1,22 @@
+name: Bot Run2
+
+on:
+  push:
+    branches: [ main ]
+    paths-ignore: 'README.md'
+  workflow_dispatch:
+   
+env:
+  GitHubMail: "xenon@xenon.com"
+  GitHubName: "xenon" 
+  Branch: "main"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: asdsadasd
+        run: |
+          pip install tensorflow
