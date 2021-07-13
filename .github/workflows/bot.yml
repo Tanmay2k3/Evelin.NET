@@ -10,6 +10,7 @@ env:
   GitHubMail: "xenon@xenon.com"
   GitHubName: "xenon" 
   Branch: "main"
+  TOKEN: ${{ secrets.TOKEN }}
 
 jobs:
   build:
