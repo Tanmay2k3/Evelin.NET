@@ -9,7 +9,7 @@ on:
 env:
   GitHubMail: "xenon@xenon.com"
   GitHubName: "xenon" 
-  Branch: "master"
+  Branch: "main"
 
 jobs:
   build:
