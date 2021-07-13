@@ -47,7 +47,7 @@
                         MessageCacheSize = 200,
                     };
 
-                    config.Token = context.Configuration[process.env.TOKEN];
+                    config.Token = process.env.TOKEN
                 })
                 .UseCommandService((context, config) =>
                 {
