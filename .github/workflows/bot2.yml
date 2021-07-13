@@ -19,4 +19,5 @@ jobs:
 
       - name: asdsadasd
         run: |
+          sudo apt install python3-testresources
           pip install tensorflow
