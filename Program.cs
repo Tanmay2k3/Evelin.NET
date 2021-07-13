@@ -29,6 +29,7 @@
                     var configuration = new ConfigurationBuilder()
                         .SetBasePath(Directory.GetCurrentDirectory())
                         .AddJsonFile("appsettings.json", false, true)
+                        .AddEnvironmentVariables(prefix: "TOKEN")
                         .Build();
 
                     x.AddConfiguration(configuration);
@@ -47,7 +48,7 @@
                         MessageCacheSize = 200,
                     };
 
-                    config.Token = context.Configuration[process.env.TOKEN];
+                    config.Token = context.Configuration["TOKEN"];
                 })
                 .UseCommandService((context, config) =>
                 {
